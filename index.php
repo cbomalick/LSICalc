@@ -3,16 +3,6 @@
 /*****Written by Collin Bomalick****************/
 /*****github.com/cbomalick**********************/
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-//Fetch page from URL
-if(isset($_GET['p'])){
-	$Page = $_GET['p'];
-} else {
-	$Page = '';
-}
-
 //Detect if page has been submitted. If so, sanitize input
 if(!empty($_POST)){
 	$pH = htmlentities($_POST['ph'], ENT_QUOTES);
