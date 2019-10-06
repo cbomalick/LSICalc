@@ -74,6 +74,10 @@ p {
   text-align: left;
 }
 
+ul {
+  text-align:left;
+}
+
 .header {
   font-weight: bold;
 }
@@ -268,8 +272,14 @@ Echo'
 <div class="container">
   <div class="panel">
       <form autocomplete="off" action="?" id="form" method="post" enctype="multipart/form-data">
-      <h2>Taylor Standard Index Calculator</h2>
-      <p>Enter the current chemical readings</p>
+      <h2>Langelier Saturation Index Calculator</h2>
+      <p>The Langelier Index is an approximate indicator of the calcium carbonate saturation in water.
+        <ul>
+          <li>If the index is negative, water is under saturated and will tend to corrode scale</li>
+          <li>If the index is positive, water is over saturated and will tend to deposit scale</li>
+          <li>If the index is close to zero, water will neither strongly corrode or deposit scale</li>
+        </ul>
+      </p>
       <p class="header">pH <span id="phwarning" class="requiredfield"></span></p>
       <p><input name="ph" id="ph" value="'.$pH.'"></p>
       <p class="header">Temperature (&#176;F)<span id="temperaturewarning" class="requiredfield"></span></p>
