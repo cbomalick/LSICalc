@@ -37,11 +37,8 @@ if(!empty($_POST)){
   $Solids = '';
   $RoundedLSI = '0';
 }
-
 ?>
-
 <html>
-
 <head>
 <style>
 body {
@@ -121,11 +118,9 @@ input {
 }
 
 </style>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
 $(document).ready(function() {
-  
   //Required Field validations
   //pH
   $("#submit").click(function(e) {
@@ -196,9 +191,7 @@ $(document).ready(function() {
     $('#solids').val('');
     $('#ph').val('');
   });
-  
 });
-
 </script>
 
 </head>
@@ -218,17 +211,17 @@ Echo'
         </ul>
       </p>
       <p class="header">pH <span id="phwarning" class="requiredfield"></span></p>
-      <p><input name="ph" id="ph" value="'.$pH.'"></p>
+        <p><input name="ph" id="ph" value="'.$pH.'"></p>
       <p class="header">Temperature (&#176;F)<span id="temperaturewarning" class="requiredfield"></span></p>
-      <p><input name="temperature" id="temperature" value="'.$Temperature.'"></p>
+        <p><input name="temperature" id="temperature" value="'.$Temperature.'"></p>
       <p class="header">Calcium Hardness (ppm)<span id="calciumwarning" class="requiredfield"></span></p>
-      <p><input name="calcium" id="calcium" value="'.$Calcium.'"></p>
+        <p><input name="calcium" id="calcium" value="'.$Calcium.'"></p>
       <p class="header">Alkalinity (ppm)<span id="alkalinitywarning" class="requiredfield"></span></p>
-      <p><input name="alkalinity" id="alkalinity" value="'.$Alkalinity.'"></p>
+        <p><input name="alkalinity" id="alkalinity" value="'.$Alkalinity.'"></p>
       <p class="header">Total Dissolved Solids (ppm)<span id="solidswarning" class="requiredfield"></span></p>
-      <p><input name="solids" id="solids" value="'.$Solids.'"></p>
+        <p><input name="solids" id="solids" value="'.$Solids.'"></p>
       <p class="header">Calculated LSI Value</p>
-      <p>'.$RoundedLSI.'</p>
+        <p>'.$RoundedLSI.'</p>
       <button class="button" type="submit" name="submit" id="submit">Calculate</button> <button class="button red" name="reset" id="reset">Reset</button>
     </form>
   </div>
