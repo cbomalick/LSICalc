@@ -1,7 +1,8 @@
 <?
-/*****Langelier Saturation Index Calculator*****/
-/*****Written by Collin Bomalick****************/
-/*****github.com/cbomalick**********************/
+/******Langelier Saturation Index Calculator*****/
+/******Written by Collin Bomalick****************/
+/******github.com/cbomalick**********************/
+/*Measures calcium carbonate saturation in water*/
 
 //Detect if page has been submitted. If so, sanitize input
 if(!empty($_POST)){
