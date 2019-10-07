@@ -49,11 +49,9 @@ body {
   font-size: 14px;
   color: #6c717f;
 }
-
 .container {
   text-align: center;
 }
-
 .panel {
   display: inline-block;
   padding: 15px;
@@ -61,25 +59,20 @@ body {
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
 h2 {
   font-weight: bold;
   border-bottom: 1px solid #E6E6E6;
   padding-bottom: 5px;
 }
-
 p {
   text-align: left;
 }
-
 ul {
   text-align:left;
 }
-
 .header {
   font-weight: bold;
 }
-
 .button {
     position: relative;
     display: inline-block;
@@ -104,20 +97,16 @@ ul {
     cursor: pointer;
     transition: box-shadow 0.2s;
 }
-
 .button.red {
   background-color: #f53649;
 }
-
 input {
   width: 100%;
 }
-
 .requiredfield {
   color: red;
   font-weight: bold;
 }
-
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
@@ -194,11 +183,9 @@ $(document).ready(function() {
   });
 });
 </script>
-
 </head>
 <body>
 <?
-
 Echo'
 <div class="container">
   <div class="panel">
@@ -227,9 +214,6 @@ Echo'
     </form>
   </div>
 </div>';
-
 ?>
-
 </body>
-
 </html>
