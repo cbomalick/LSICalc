@@ -18,13 +18,13 @@ if(!empty($_POST)){
       //Perform calculations on inputs
       $TemperatureCelcius = (($Temperature - 32) / 1.8);
       
-      $A = ((log10($Solids) - 1) / 10);
-      $B = (-13.12 * log10($TemperatureCelcius + 273) + 34.55);
-      $C = (log10($Calcium) - 0.4);
-      $D = log10($Alkalinity);
+      $Solids = ((log10($Solids) - 1) / 10);
+      $Temperature = (-13.12 * log10($TemperatureCelcius + 273) + 34.55);
+      $Calcium = (log10($Calcium) - 0.4);
+      $Alkalinity = log10($Alkalinity);
 
       //Calculate final value
-      $FullLSI = ($pH - ((9.3 + $A + $B) - ($C + $D)));
+      $FullLSI = ($pH - ((9.3 + $Solids + $Temperature) - ($Calcium + $Alkalinity)));
 
       //Round long LSI value to 1 decimal place. Values are rounded away from 0, making 1.5 into 2 and -1.5 into -2
       $RoundedLSI = round($FullLSI, PHP_ROUND_HALF_UP);
